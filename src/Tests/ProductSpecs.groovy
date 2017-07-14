@@ -28,4 +28,11 @@ class ProductSpecs extends Specification {
             result == 1
     }
 
+    def "Product name should equal Door"(){
+        given:
+            def result = product.getName()
+        expect:
+            result == "Door"
+    }
+
 }
