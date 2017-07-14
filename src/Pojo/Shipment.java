@@ -11,7 +11,7 @@ public class Shipment implements Iterable<Product> {
     private static final int LIGHT_VAN_MAX_WEIGHT = 20;
     final int PRODUCT_NOT_PRESENT = -1;
 
-    private final List<Product> products = new ArrayList<>();
+    public final List<Product> products = new ArrayList<>();
     private List<Product> lightVanProducts;
     private List<Product> heavyVanProducts;
 
