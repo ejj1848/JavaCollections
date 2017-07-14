@@ -20,4 +20,10 @@ class CalculatorSpecs extends  Specification{
             result == 2
 
     }
+    def "Calculator 1+1+1+1+1 = 5"(){
+        given:
+            def result = calculator.evaluate("1+1+1+1+1")
+        expect:
+            result == 5
+    }
 }
